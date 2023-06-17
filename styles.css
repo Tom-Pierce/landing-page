@@ -165,6 +165,16 @@ text {
     border-color: #E5E7Eb;
 }
 
+.sign-up .donate:hover {
+    border-style: solid;
+    border-color: #bdbdbd;
+    color: #bdbdbd;
+    background-color: #277bff;
+    transition: 0.03s;
+
+
+}
+
 .sign-up .sub-text {
     font-size: 12px;
     font-weight: lighter;
