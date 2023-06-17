@@ -1,3 +1,56 @@
+/* Reset CSS */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+img,
+svg,
+video,
+canvas,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  overflow-wrap: break-word;
+}
+
+
+/* CSS */
+button:hover {
+    cursor: pointer;
+}
+
 body {
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
@@ -84,6 +137,15 @@ h2 {
 
 }
 
+.hero > :first-child {
+    width: 60%;
+}
+
+.hero > :last-child {
+    width: 40%;
+}
+
+
 .content {
     display: flex;
     flex-direction: column;
@@ -94,14 +156,15 @@ h3 {
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
+    padding: 30px;
 }
 
 .content .container {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     gap: 60px;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 80px;
 }
 
@@ -186,5 +249,9 @@ text {
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+.image {
 
 }
